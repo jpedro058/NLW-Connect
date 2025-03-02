@@ -14,6 +14,7 @@ import { accessInviteLinkRoute } from "./routes/access-invite-link";
 import { getSubcriberInviteClicksRoute } from "./routes/get-subscriber-invite-clicks-route";
 import { getSubcriberInviteCountRoute } from "./routes/get-subscriber-invites-count-route";
 import { getSubcriberRankingPositionRoute } from "./routes/get-subscriber-ranking-position-route";
+import { getRankingRoute } from "./routes/get-ranking-route";
 
 const app = fastify().withTypeProvider<ZodTypeProvider>();
 
@@ -41,6 +42,7 @@ app.register(accessInviteLinkRoute);
 app.register(getSubcriberInviteClicksRoute);
 app.register(getSubcriberInviteCountRoute);
 app.register(getSubcriberRankingPositionRoute);
+app.register(getRankingRoute);
 
 app.listen({ port: env.PORT }).then(() => {
   console.log("Server is running on port 3333");
