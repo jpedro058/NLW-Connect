@@ -1,6 +1,6 @@
-import gold from "../../assets/medal-gold.svg";
-import silver from "../../assets/medal-silver.svg";
-import cooper from "../../assets/medal-cooper.svg";
+import gold from "../../../assets/medal-gold.svg";
+import silver from "../../../assets/medal-silver.svg";
+import cooper from "../../../assets/medal-cooper.svg";
 import Image from "next/image";
 
 export function Ranking() {
